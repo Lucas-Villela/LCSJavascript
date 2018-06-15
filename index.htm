@@ -100,7 +100,7 @@
 			var resultado = LCS($("#cadeia1").val(), $("#cadeia2").val());
 			var t1 = performance.now();
 			$("#saida-resultado").text(resultado);
-			$("#saida-tempo").text("I: "+ t0 + " F: " + t1 + "|" + (t1 - t0) / 1000 + " segundos." + " (" + (t1 - t0) + " ms.)");
+			$("#saida-tempo").text((t1 - t0) / 1000 + " segundos." + " (" + (t1 - t0) + " ms.)");
 			$("#results").show();
 			return false;
 		});
